@@ -1,0 +1,138 @@
+.main-nav {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 56px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin-bottom: 12px;
+  margin-right: 20px;
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main-nav__logo {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Закрыто мобильное меню - main-nav--closed
+//3 Стилизация кнопки
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 4px;
+  margin-top:  13px;
+
+  background-color: rgba(129, 179, 210, 1);
+  box-shadow: 0 8px 0 0 rgba(129, 179, 210, 1), 0 16px 0 0 rgba(129, 179, 210, 1);
+
+  &:hover::before {
+    background-color: rgba(179, 209, 228, 1);
+    box-shadow: 0 8px 0 0 rgba(179, 209, 228, 1), 0 16px 0 0 rgba(179, 209, 228, 1);
+  }
+
+  &:active::before {
+    background-color: rgba(217, 232, 241, 1);
+    box-shadow: 0 8px 0 0 rgba(217, 232, 241, 1), 0 16px 0 0 rgba(217, 232, 241, 1);
+  }
+}
+
+ // 2 стилизация сите- лист
+ .main-nav--closed .site-list {
+  display: none;
+}
+
+// Открыто мобильное меню
+.main-nav--opened  {
+  padding-bottom:  0;
+}
+
+.main-nav--opened .site-list {
+  display: block ;
+}
+
+// 3. стилизация кнопки в виде крестика
+.main-nav--opened .main-nav__toggle {
+  top: 19px;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 33px;
+    height: 4px;
+    background-color : $color-background;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba(205, 225, 237, 1);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(167, 202, 224, 1);
+  }
+}
+
+ // При открытом мобильном менюна телефоне логотип отсутствует
+ .main-nav--opened .logo {
+   display:  none
+ }
+
+ @media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: 56px;
+    width: auto;
+
+    @include list-reset;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav--closed .site-list ,
+  .main-nav--opened .site-list{
+    display: flex ;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav--opened .logo{
+    display:  block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

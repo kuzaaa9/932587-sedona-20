@@ -1,0 +1,98 @@
+.panel {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel {
+    position: relative;
+    width: 647px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .panel {
+    width: 800px;
+  }
+
+}
+
+.panel__elements {
+  height: 45px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background-color: $color-accent;
+  opacity: 60%;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__elements {
+    padding: 45px 160px 45px 90px;
+  }
+
+}
+
+.panel__toggle {
+  left: 0;
+  top: 0;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $color-background;
+  cursor: pointer;
+}
+
+.panel__scale {
+  width: 100%;
+  height: 3px;
+  background-color: #858585;
+}
+
+.panel__buttons {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 23px;
+  box-sizing: border-box;
+  align-items: center;
+  background: $color-secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95px;
+    padding: 0 35px 0 40px;
+    background-color: transparent;
+  }
+
+}
+
+.panel__replay {
+  padding-right: 135px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__replay {
+    padding-right: 475px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .panel__replay {
+    padding-right: 625px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .panel__subtitles {
+    padding-right: 30px;
+  }
+
+}

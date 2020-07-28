@@ -1,0 +1,202 @@
+.benefits__list {
+  width: 320px;
+  padding: 0;
+
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.benefits__item {
+  position: relative;
+  background-color: $color-main-second;
+}
+
+.benefits__item--first,
+.benefits__item--second {
+  background-color: $color-main;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item--first,
+  .benefits__item--second {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.benefits__content {
+  padding: 40px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__content {
+    width: 256px;
+    padding: 45px 50px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__content {
+    width: 400px;
+    padding: 55px 50px;
+  }
+}
+
+.benefits__item--first {
+  .benefits__el {
+    min-height:  257px;
+    background-image: url("../img/main-city-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/main-city-mobile@2x.jpg");
+    // }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item--first {
+    .benefits__el {
+      width: 512px;
+      background-image: url("../img/main-city-tablet@1x.jpg");
+
+      // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+        // background-image: url("../img/main-city-tablet@2x.jpg");
+      // }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item--first {
+    .benefits__el {
+      width: 800px;
+      background-image: url("../img/main-city-desktop@1x.jpg");
+
+      // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+        // background-image: url("../img/main-city-desktop@2x.jpg");
+      // }
+    }
+  }
+}
+
+.benefits__item--second {
+  .benefits__el {
+    min-height: 257px;
+    background-image: url("../img/photo-bridge-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+      // background-image: url("../img/photo-bridge-mobile@2x.jpg");
+    // }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item--second {
+    .benefits__el {
+      width: 512px;
+      background-image: url("../img/photo-bridge-tablet@1x.jpg");
+      order: -1;
+
+      // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+        // background-image: url("../img/photo-bridge-tablet@2x.jpg");
+      // }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item--second {
+    .benefits__el {
+      width: 800px;
+      background-image: url("../img/photo-bridge-desktop@1x.jpg");
+
+      // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+        // background-image: url("../img/photo-bridge-desktop@2x.jpg");
+      // }
+    }
+  }
+}
+.benefits__item--gray {
+  .benefits__content {
+    margin: 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item--gray {
+    .benefits__content {
+      margin: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.benefits__item--gray:last-child {
+  .benefits__content {
+    border-bottom: 0;
+  }
+
+}
+@media (min-width: $tablet-width) {
+  .benefits__item--gray {
+    padding: 0;
+  }
+}
+
+.benefits__subtitle {
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  @include text-heading;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__subtitle {
+    @include text-heading-tablet;
+  }
+
+}
+
+.benefits__number,
+.benefits__info {
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  text-align: center;
+  @include text-content;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__number,
+  .benefits__info {
+    @include text-content-tablet;
+  }
+}
+
+.benefits__item--first,
+.benefits__item--second {
+  .benefits__subtitle,
+  .benefits__number,
+  .benefits__info {
+    color: $text-secondary-color;
+  }
+
+}

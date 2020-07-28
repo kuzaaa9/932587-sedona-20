@@ -1,0 +1,37 @@
+// / Окно- ваш отзыв отправлен на мобилке
+.popup-sucess {
+  padding: 40px 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-sucess {
+    width: 645px;
+    padding-top: 50px;
+  }
+
+}
+
+.popup-sucess--closed {
+  display: none;
+}
+
+.popup--sucess--opened {
+  display: block;
+}
+
+.popup-sucess__info {
+  padding: 0 50px 30px;
+}
+
+.popup-sucess__wrap {
+  padding: 20px;
+  background-color: $color-secondary;
+}
+
+.popup-sucess__button {
+  display: block;
+  padding: 17px 70px;
+  margin: 0 auto;
+  font-family: "PT Sans";
+  @include text-heading;
+}

@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  padding-right: 10px;
+
+  @include text-label;
+
+  color: $text-heading-color;
+}
+
+.copyright__link {
+  display: block;
+  width: 28px;
+  height: 34px;
+  color: $text-heading-color;
+}
+
+.copyright__link:hover svg {
+  fill: $color-main-hover;
+}
+
+.copyright__link:active svg{
+  fill: #b2b2b2;
+}

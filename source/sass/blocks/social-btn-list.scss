@@ -1,0 +1,24 @@
+.social-btn-list {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+
+  @include list-reset;
+}
+
+.social-btn-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: $color-main;
+}
+
+.social-btn-list__link::hover {
+  background-color: $color-main-hover;
+}
+
+.social-btn-list__link::active {
+  background-color: $color-main-active;
+}
