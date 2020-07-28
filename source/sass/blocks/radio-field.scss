@@ -2,8 +2,8 @@
   padding-bottom: 20px;
 }
 
- // 1- скрываем радиобаттон
- .radio-field__input[type="radio"] {
+// 1- скрываем радиобаттон
+.radio-field__input[type="radio"] {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -56,15 +56,15 @@
 
 // 5 Делаем состояние наведении  на лейбл (или псевдоинпут(большого шарика)),но НЕЧЕКНУТОГО
 .radio-field__input:hover + .radio-field__label::before {
- background-color: $color-secondary-hover;
+  background-color: $color-secondary-hover;
 }
 
 .radio-field__input:hover + .radio-field__label::after {
   content: "";
 }
 
- // 6 Делаем состояние ЧЕКНУТОГО  на лейбл (или псевдоинпут(большого шарика)),но c ЧЕКНУТОтым маленььким
- .radio-field__input:active + .radio-field__label::before {
+// 6 Делаем состояние ЧЕКНУТОГО  на лейбл (или псевдоинпут(большого шарика)),но c ЧЕКНУТОтым маленььким
+.radio-field__input:active + .radio-field__label::before {
   background-color: $color-secondary-active;
 }
 
@@ -73,8 +73,8 @@
   background-color: #a4a4a4;
 }
 
- // 6 Делаем состояние ПОКОЯ В НЕАКТИВНОМ ПОЛОЖЕНИИ  на лейбл (или псевдоинпут(большого шарика)),но c ЧЕКНУТОтым маленььким
- .radio-field__input + .radio-field__label::before {
+// 6 Делаем состояние ПОКОЯ В НЕАКТИВНОМ ПОЛОЖЕНИИ  на лейбл (или псевдоинпут(большого шарика)),но c ЧЕКНУТОтым маленььким
+.radio-field__input + .radio-field__label::before {
   background-color: $color-secondary;
 }
 
