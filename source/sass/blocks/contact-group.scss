@@ -1,0 +1,134 @@
+.contact-group {
+  position: relative;
+  padding: 0;
+
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-group {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0;
+  }
+}
+
+.contact-group__wrap {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-group__wrap {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-group__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-bottom: 0;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-group__wrap:first-child {
+    padding-right: 75px;
+    box-sizing: border-box;
+  }
+}
+
+.contact-group__label {
+  position: relative;
+  display: block;
+  padding: 0 20px 10px;
+
+  @include text-label;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-group__label {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-group__label {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-group__span {
+    display: none;
+  }
+}
+
+.contact-group__input-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-group__input-wrap {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-group__input-wrap {
+    width: 315px;
+  }
+}
+
+.contact-group__input {
+  width: 207px;
+  padding: 0 0 0 15px;
+  background: $color-secondary;
+  border: none;
+  outline: none;
+
+  @include text-heading;
+  color: $text-heading-color;
+  text-transform: none;
+}
+
+.contact-group__input::-webkit-input-placeholder {
+  color: $text-heading-color;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-group__input {
+    flex-grow: 1;
+    padding: 15px 20px;
+    box-sizing: border-box;
+  }
+}
+
+.contact-group__image {
+  top: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.contact-group__image--tel {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.contact-group__image--mail {
+  background-image: url("../img/icon-mail.svg");
+}

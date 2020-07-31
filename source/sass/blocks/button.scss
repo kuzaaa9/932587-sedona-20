@@ -1,0 +1,22 @@
+.button {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: $text-secondary-color;
+  background: $color-main;
+  border: 0 none;
+  outline: none;
+
+  &:hover {
+    background-color: $color-main-hover;
+  }
+
+  &:active {
+    color: $text-active-color;
+    background-color: $color-main-active;
+  }
+
+  &:disabled {
+    background-color: $color-secondary-hover;
+  }
+}

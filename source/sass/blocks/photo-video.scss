@@ -1,0 +1,15 @@
+.photo-video {
+  padding-bottom: 120px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-video {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-video {
+    padding: 0;
+  }
+}

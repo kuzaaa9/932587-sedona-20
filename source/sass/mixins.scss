@@ -1,0 +1,62 @@
+// Можно обьединить
+
+@mixin text-heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin text-heading-tablet {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin text-content {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-primary-color;
+  text-transform: uppercase;
+}
+
+
+// Другое
+@mixin text-content-tablet {
+  font-size: 14px;
+  line-height: 21px;
+  color: $text-primary-color;
+  text-transform: uppercase;
+}
+
+@mixin text-label {
+  font-size: 14px;
+  line-height: 26px;
+  color: $text-primary-color;
+  text-transform: uppercase;
+}
+
+@mixin text-nav-menu {
+  font-size: 18px;
+  line-height: 40px;
+  color: $text-secondary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@mixin list-reset($padding-left:0) {
+  margin: 0;
+  padding-left: $padding-left;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+@mixin no-outline {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

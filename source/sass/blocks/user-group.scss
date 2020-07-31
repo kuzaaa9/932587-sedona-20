@@ -1,0 +1,49 @@
+.user-group {
+  padding: 0;
+
+  @include list-reset;
+}
+
+// @media (min-width:$tablet-width) {
+//
+// }
+
+.user-group__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.user-group__input {
+  display: block;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 15px 0 15px 20px;
+  background: $color-secondary;
+  outline: none;
+  border: none;
+
+  @include text-heading;
+  text-transform: none;
+
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+
+  &:active {
+    background-color: $color-background;
+    border: 4px solid $color-secondary-hover;
+  }
+}
+
+.user-group__input::-webkit-input-placeholder {
+  color: $text-heading-color;
+}
+
+.user-group__label {
+  display: block;
+  padding-right: 10px;
+
+  @include text-label;
+}
