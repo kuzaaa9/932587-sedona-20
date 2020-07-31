@@ -1,5 +1,4 @@
 .photo-list {
-
   @include list-reset;
 }
 
@@ -10,14 +9,12 @@
     flex-wrap: wrap;
     padding: 25px 0 25px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .photo-list {
     padding: 45px 0 10px;
   }
-
 }
 
 .photo-list__item {
@@ -30,7 +27,6 @@
     padding: 0;
     border-bottom: none;
   }
-
 }
 
 .photo-list__figure {
@@ -47,14 +43,12 @@
     width: 324px;
     height: 265px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .photo-list__img {
     width: 400px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -62,14 +56,12 @@
     width: 648px;
     height: 400px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .photo-list__img--first {
     width: 1200px;
   }
-
 }
 
 .photo-list__figcaption {
@@ -83,17 +75,15 @@
     padding: 15px 20px;
     background-color: $color-secondary;
   }
-
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .photo-list__figcaption--dark {
     background-color: #eaeaea;
   }
-
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .photo-list__figcaption {
     display: block;
     position: absolute;
@@ -104,7 +94,6 @@
     background-color: #181f08;
     opacity: 0.6;
   }
-
 }
 
 .photo-list__heading {
@@ -118,12 +107,11 @@
   font-weight: bold;
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .photo-list__heading,
   .photo-list__author {
     color: $text-secondary-color;
   }
-
 }
 
 .photo-list__author {

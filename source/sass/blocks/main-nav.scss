@@ -38,7 +38,7 @@
   left: 0;
   width: 27px;
   height: 4px;
-  margin-top:  13px;
+  margin-top: 13px;
 
   background-color: rgba(129, 179, 210, 1);
   box-shadow: 0 8px 0 0 rgba(129, 179, 210, 1), 0 16px 0 0 rgba(129, 179, 210, 1);
@@ -65,7 +65,7 @@
 }
 
 .main-nav--opened .site-list {
-  display: block ;
+  display: block;
 }
 
 // 3. стилизация кнопки в виде крестика
@@ -78,10 +78,10 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     width: 33px;
     height: 4px;
-    background-color : $color-background;
+    background-color: $color-background;
   }
 
   &::before {
@@ -104,9 +104,9 @@
   }
 }
 
-// При открытом мобильном менюна телефоне логотип отсутствует
+// При открытом мобильном меню на телефоне логотип отсутствует
 .main-nav--opened .logo {
-  display:  none
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -119,15 +119,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav--closed .site-list ,
-  .main-nav--opened .site-list{
-    display: flex ;
+  .main-nav--closed .site-list,
+  .main-nav--opened .site-list {
+    display: flex;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav--opened .logo{
-    display:  block;
+  .main-nav--opened .logo {
+    display: block;
   }
 }
 

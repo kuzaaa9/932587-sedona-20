@@ -15,10 +15,10 @@
   background: $color-main;
 }
 
-.social-btn-list__link::hover {
+.social-btn-list__link:hover {
   background-color: $color-main-hover;
 }
 
-.social-btn-list__link::active {
+.social-btn-list__link:active {
   background-color: $color-main-active;
 }

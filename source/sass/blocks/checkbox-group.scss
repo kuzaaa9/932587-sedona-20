@@ -1,5 +1,4 @@
 .checkbox-group {
-
   @include list-reset;
 
   padding: 0;
@@ -11,12 +10,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .checkbox-group {
     padding: 45px 0;
   }
-
 }

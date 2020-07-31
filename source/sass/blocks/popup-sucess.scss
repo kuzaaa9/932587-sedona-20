@@ -8,7 +8,6 @@
     width: 645px;
     padding-top: 50px;
   }
-
 }
 
 .popup-sucess--closed {
@@ -32,6 +31,6 @@
   display: block;
   padding: 17px 70px;
   margin: 0 auto;
-  font-family: "PT Sans";
+
   @include text-heading;
 }

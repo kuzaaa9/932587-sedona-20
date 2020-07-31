@@ -6,19 +6,20 @@
   display: block;
   padding: 20px 0;
   text-align: start;
+
   @include list-reset;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__wrapp {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     padding: 0;
+
     @include list-reset;
   }
-
 }
 
 .more-list__item {
@@ -27,18 +28,16 @@
   box-sizing: border-box;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__item {
     padding: 160px 45px 65px;
   }
-
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .more-list__item {
     padding: 160px 70px 85px;
   }
-
 }
 
 .more-list__content {
@@ -46,42 +45,41 @@
   box-sizing: border-box;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__content {
     max-width: 168px;
   }
-
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .more-list__content {
     max-width: 295px;
   }
-
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__advantage {
     margin: 0;
     padding-bottom: 8px;
+
     @include text-heading-tablet;
   }
-
 }
 
 .more-list__info {
   margin: 0;
   padding-bottom: 5px;
+
   @include text-content-tablet;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__info {
     margin: 0;
     padding-bottom: 5px;
+
     @include text-content-tablet;
   }
-
 }
 
 .more-list__item--icon1::before {
@@ -99,7 +97,7 @@
   background-size: cover;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__item--icon1::before {
     content: "";
     position: absolute;
@@ -111,7 +109,6 @@
     height: 72px;
     background-image: url("../img/icon-house.svg");
   }
-
 }
 
 .more-list__item--icon2::before {
@@ -128,7 +125,7 @@
   background-size: cover;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__item--icon2::before {
     content: "";
     position: absolute;
@@ -140,7 +137,6 @@
     height: 75px;
     background-image: url("../img/icon-gift.svg");
   }
-
 }
 
 .more-list__item--icon3::before {
@@ -157,7 +153,7 @@
   background-size: cover;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .more-list__item--icon3::before {
     content: "";
     position: absolute;
@@ -169,5 +165,4 @@
     height: 68px;
     background-image: url("../img/icon-burger.svg");
   }
-
 }

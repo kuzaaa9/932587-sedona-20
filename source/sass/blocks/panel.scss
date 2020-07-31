@@ -7,14 +7,12 @@
     position: relative;
     width: 647px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .panel {
     width: 800px;
   }
-
 }
 
 .panel__elements {
@@ -29,7 +27,6 @@
   .panel__elements {
     padding: 45px 160px 45px 90px;
   }
-
 }
 
 .panel__toggle {
@@ -69,7 +66,6 @@
     padding: 0 35px 0 40px;
     background-color: transparent;
   }
-
 }
 
 .panel__replay {
@@ -80,19 +76,16 @@
   .panel__replay {
     padding-right: 475px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .panel__replay {
     padding-right: 625px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
   .panel__subtitles {
     padding-right: 30px;
   }
-
 }

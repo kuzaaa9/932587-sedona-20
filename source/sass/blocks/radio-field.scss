@@ -68,17 +68,17 @@
   background-color: $color-secondary-active;
 }
 
-.radio-field__input:checked + .radio-field__label:after {
+.radio-field__input:checked + .radio-field__label::after {
   content: "";
   background-color: #a4a4a4;
 }
 
 // 6 Делаем состояние ПОКОЯ В НЕАКТИВНОМ ПОЛОЖЕНИИ  на лейбл (или псевдоинпут(большого шарика)),но c ЧЕКНУТОтым маленььким
-.radio-field__input + .radio-field__label::before {
-  background-color: $color-secondary;
-}
+// .radio-field__input + .radio-field__label::before {
+// background-color: $color-secondary;
+// }
 
 // .radio-field__input:checked + .radio-field__label:after {
-  // content: "";
-  // background-color: $text-primary-color;
+// content: "";
+// background-color: $text-primary-color;
 // }

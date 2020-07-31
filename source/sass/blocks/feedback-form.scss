@@ -8,7 +8,6 @@
   .feedback-form {
     border-top: 0;
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -19,14 +18,12 @@
     padding: 0 60px;
     border-top: 0 none;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .feedback-form {
     padding: 0 120px 65px;
   }
-
 }
 
 .feedback-form__item {
@@ -45,14 +42,12 @@
     border: 0;
     border-top: 1px solid $color-secondary-active;
   }
-
 }
 
 @media (min-width: $tablet-width) {
   .feedback-form__item--auxiliary {
     margin-bottom: 55px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -61,7 +56,6 @@
     width: 320px;
     border-top: 0;
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -70,14 +64,12 @@
     padding-right: 40px;
     border-right: 1px solid $color-secondary-active;
   }
-
 }
 
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1) {
     padding-left: 55px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -90,11 +82,11 @@
     width: 480px;
     border-top: 0 none;
   }
-
 }
 
 .feedback-form__heading {
   padding: 20px;
+
   @include text-heading;
   text-align: center;
 }
@@ -102,9 +94,9 @@
 @media (min-width: $tablet-width) {
   .feedback-form__heading {
     padding-bottom: 20px;
+
     @include text-heading-tablet;
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -114,9 +106,7 @@
       padding: 20px 0;
       text-align: start;
     }
-
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -124,9 +114,7 @@
     .feedback-form__heading {
       padding-left: 75px;
     }
-
   }
-
 }
 
 .feedback-form__item--auxiliary {
@@ -140,9 +128,8 @@
   padding: 15px;
   box-sizing: border-box;
 
-  @include  text-heading;
+  @include text-heading;
   text-transform: none;
-
   border: none;
   outline: none;
   background: $color-secondary;
@@ -153,7 +140,7 @@
   padding-bottom: 40px;
 }
 
-@media (min-width :$tablet-width) {
+@media (min-width: $tablet-width) {
   .feedback-form__button-wrapp {
     display: flex;
     justify-content: space-between;
@@ -161,7 +148,6 @@
     margin: 0;
     padding: 25px 0;
   }
-
 }
 
 .feedback-form__button {
@@ -171,7 +157,6 @@
   margin: 0 auto;
 
   @include text-heading-tablet;
-
   color: $text-secondary-color;
 }
 
@@ -180,7 +165,6 @@
     width: 50%;
     margin: 0;
   }
-
 }
 
 .feedback-form__correction {
@@ -189,8 +173,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form__correction {
-    @include  text-label;
+    @include text-label;
     display: block;
   }
-
 }

@@ -10,7 +10,6 @@
     padding-left: 25px;
     box-sizing: border-box;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -18,7 +17,6 @@
     width: 25%;
     padding: 0;
   }
-
 }
 
 // 1-Скрываем настоящий чекбокс
@@ -32,6 +30,7 @@
   position: relative;
   display: block;
   padding: 15px 0 15px 80px;
+
   @include text-heading;
   color: $text-heading-color;
   text-transform: none;
@@ -41,7 +40,6 @@
   .checkbox-field__label {
     padding-left: 80px;
   }
-
 }
 
 .checkbox-field__label::before {
@@ -92,7 +90,7 @@
   background-color: $color-secondary-active;
 }
 
-.checkbox-field__input:checked + .checkbox-field__label:after {
+.checkbox-field__input:checked + .checkbox-field__label::after {
   content: "";
   border-bottom: 5px solid #a8a8a8;
   border-left: 5px solid #a8a8a8;
