@@ -1,5 +1,4 @@
 .benefits__list {
-  width: 320px;
   padding: 0;
 
   @include list-reset;
@@ -14,14 +13,21 @@
   }
 }
 
-.benefits__item {
-  position: relative;
-  background-color: $color-main-second;
+@media (min-width: $tablet-width) {
+  .benefits__item {
+    min-height: 256px;
+  }
 }
 
 .benefits__item--first,
 .benefits__item--second {
   background-color: $color-main;
+
+  .benefits__subtitle,
+  .benefits__number,
+  .benefits__info {
+    color: $text-secondary-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,7 +40,7 @@
 }
 
 .benefits__content {
-  padding: 40px 20px;
+  padding: 35px 20px 25px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -42,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .benefits__content {
     width: 256px;
-    padding: 45px 50px;
+    padding: 40px 35px 25px;
     margin: 0;
   }
 }
@@ -50,13 +56,12 @@
 @media (min-width: $desktop-width) {
   .benefits__content {
     width: 400px;
-    padding: 55px 50px;
+    padding: 40px 50px 25px;
   }
 }
 
 .benefits__item--first {
-  .benefits__el {
-    min-height: 257px;
+  .benefits__snapshot {
     background-image: url("../img/main-city-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .benefits__item--first {
-    .benefits__el {
+    .benefits__snapshot {
       width: 512px;
       background-image: url("../img/main-city-tablet@1x.jpg");
 
@@ -82,7 +87,7 @@
 
 @media (min-width: $desktop-width) {
   .benefits__item--first {
-    .benefits__el {
+    .benefits__snapshot {
       width: 800px;
       background-image: url("../img/main-city-desktop@1x.jpg");
 
@@ -94,8 +99,7 @@
 }
 
 .benefits__item--second {
-  .benefits__el {
-    min-height: 257px;
+  .benefits__snapshot {
     background-image: url("../img/photo-bridge-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,7 +112,7 @@
 
 @media (min-width: $tablet-width) {
   .benefits__item--second {
-    .benefits__el {
+    .benefits__snapshot {
       width: 512px;
       background-image: url("../img/photo-bridge-tablet@1x.jpg");
       order: -1;
@@ -122,7 +126,7 @@
 
 @media (min-width: $desktop-width) {
   .benefits__item--second {
-    .benefits__el {
+    .benefits__snapshot {
       width: 800px;
       background-image: url("../img/photo-bridge-desktop@1x.jpg");
 
@@ -134,9 +138,12 @@
 }
 
 .benefits__item--gray {
+  background-color: $color-main-second;
+
   .benefits__content {
     margin: 0 20px;
-    border-bottom: 1px solid #e5e5e5;
+    padding: 40px 0 25px;
+    border-bottom: 1px solid #d6d6d6;
   }
 }
 
@@ -144,6 +151,8 @@
   .benefits__item--gray {
     .benefits__content {
       margin: 0;
+      padding-left: 40px;
+      padding-right: 40px;
       border-bottom: none;
     }
   }
@@ -155,16 +164,10 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .benefits__item--gray {
-    padding: 0;
-  }
-}
-
 .benefits__subtitle {
   padding: 0;
-  padding-bottom: 5px;
-  margin: 0;
+  padding-bottom: 15px;
+  margin: 0 auto;
 
   @include text-heading;
   text-align: center;
@@ -172,6 +175,8 @@
 
 @media (min-width: $tablet-width) {
   .benefits__subtitle {
+    width: 150px;
+
     @include text-heading-tablet;
   }
 }
@@ -179,16 +184,9 @@
 .benefits__number,
 .benefits__info {
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   margin: 0;
   text-align: center;
 
-  @include text-content;
-}
-
-@media (min-width: $tablet-width) {
-  .benefits__number,
-  .benefits__info {
-    @include text-content-tablet;
-  }
+  @include text-content-tablet;
 }
