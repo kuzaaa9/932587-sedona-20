@@ -1,11 +1,15 @@
 .more-list {
   background-color: $color-background;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .more-list__wrapp {
   display: block;
   padding: 20px 0;
   text-align: start;
+  margin: 0;
 
   @include list-reset;
 }
@@ -13,6 +17,7 @@
 @media (min-width: $tablet-width) {
   .more-list__wrapp {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
@@ -24,45 +29,43 @@
 
 .more-list__item {
   position: relative;
-  padding: 20px 40px 20px 70px;
+  padding: 15px 40px 15px 70px;
   box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .more-list__item {
-    padding: 160px 45px 65px;
+    width: 256px;
+    min-height: 334px;
+    padding: 160px 15px 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .more-list__item {
-    padding: 160px 70px 85px;
+    width: 400px;
   }
 }
 
 .more-list__content {
-  margin: 0;
+  width: 220px;
+  margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
 }
 
-@media (min-width: $tablet-width) {
-  .more-list__content {
-    max-width: 168px;
-  }
-}
+.more-list__advantage {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 8px;
 
-@media (min-width: $desktop-width) {
-  .more-list__content {
-    max-width: 295px;
-  }
+  @include text-heading;
 }
 
 @media (min-width: $tablet-width) {
   .more-list__advantage {
-    margin: 0;
-    padding-bottom: 8px;
-
     @include text-heading-tablet;
+    padding-bottom: 20px;
   }
 }
 
@@ -75,7 +78,6 @@
 
 @media (min-width: $tablet-width) {
   .more-list__info {
-    margin: 0;
     padding-bottom: 5px;
 
     @include text-content-tablet;
@@ -88,8 +90,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 35px;
-  margin-left: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
   width: 39px;
   height: 38px;
   background-image: url("../img/icon-house.svg");
@@ -98,16 +100,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .more-list__item--icon1::before {
-    content: "";
-    position: absolute;
-    top: 61px;
-    left: 50%;
-    margin-left: -38px;
-    margin-top: 0;
-    width: 75px;
-    height: 72px;
-    background-image: url("../img/icon-house.svg");
+  .more-list__item--icon1 {
+    order: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -38px;
+      margin-top: 61px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../img/icon-house.svg");
+    }
   }
 }
 
@@ -116,8 +122,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 35px;
-  margin-left: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
   width: 32px;
   height: 38px;
   background-image: url("../img/icon-gift.svg");
@@ -126,16 +132,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .more-list__item--icon2::before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    margin-left: -32px;
-    margin-top: 0;
-    width: 64px;
-    height: 75px;
-    background-image: url("../img/icon-gift.svg");
+  .more-list__item--icon2 {
+    order: 3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -32px;
+      margin-top: 60px;
+      width: 64px;
+      height: 75px;
+      background-image: url("../img/icon-gift.svg");
+    }
   }
 }
 
@@ -144,8 +154,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 35px;
-  margin-left: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
   width: 40px;
   height: 36px;
   background-image: url("../img/icon-burger.svg");
@@ -154,15 +164,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .more-list__item--icon3::before {
-    content: "";
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    margin-left: -38px;
-    margin-top: 0;
-    width: 77px;
-    height: 68px;
-    background-image: url("../img/icon-burger.svg");
+  .more-list__item--icon3 {
+    order: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -38px;
+      margin-top: 60px;
+      width: 76px;
+      height: 68px;
+      background-image: url("../img/icon-burger.svg");
+    }
   }
 }

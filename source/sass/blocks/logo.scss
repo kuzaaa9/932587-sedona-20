@@ -1,15 +1,19 @@
+.logo {
+  z-index: 100;
+}
+
 .logo__link {
   height: auto;
 }
 
 .logo__img {
-  width: 105px;
-  height: 83px;
+  width: 102px;
+  height: 84px;
 }
 
 @media (min-width: $desktop-width) {
   .logo__img {
-    width: 188px;
-    height: 96px;
+    width: 187px;
+    height: 97px;
   }
 }

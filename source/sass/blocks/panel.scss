@@ -4,14 +4,7 @@
 
 @media (min-width: $tablet-width) {
   .panel {
-    position: relative;
-    width: 647px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .panel {
-    width: 800px;
+    width: 100%;
   }
 }
 
