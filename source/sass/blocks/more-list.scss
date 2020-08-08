@@ -60,6 +60,7 @@
   padding-bottom: 8px;
 
   @include text-heading;
+  color: $text-heading-color;
 }
 
 @media (min-width: $tablet-width) {

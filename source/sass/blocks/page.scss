@@ -1,20 +1,21 @@
 .page {
-  position: relative;
+  @include text-content;
 }
 
 .page__intro {
   position: relative;
   width: 320px;
   box-sizing: border-box;
-  padding: 40px 20px 25px;
+  padding: 40px 20px 20px;
+  margin: 0;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .page__intro {
-    width: 458px;
+    width: 520px;
     margin: 0 auto;
-    padding: 40px 10px 55px;
+    padding: 30px 10px 35px;
 
     &::after {
       display: none;
@@ -22,10 +23,16 @@
   }
 }
 
-.page--main {
-  @include text-label;
-
+@media (min-width: $desktop-width) {
   .page__intro {
+    padding: 55px 10px 30px;
+  }
+}
+
+.page--main {
+  .page__intro {
+    @include text-label;
+
     &::after {
       content: "";
       position: absolute;
@@ -40,20 +47,12 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page--main {
-    .page__heading {
-      @include text-heading-tablet;
-    }
-  }
-}
-
 .page__heading {
-  width: 255px;
   margin: 0 auto;
   padding-bottom: 25px;
 
   @include text-heading;
+  color: $text-heading-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,9 +63,15 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page--main {
+    .page__heading {
+      @include text-heading-tablet;
+    }
+  }
+}
+
 .page__subheading {
   margin: 0;
   padding-bottom: 5px;
-
-  @include text-label;
 }

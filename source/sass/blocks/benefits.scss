@@ -170,6 +170,7 @@
   margin: 0 auto;
 
   @include text-heading;
+  color: $text-heading-color;
   text-align: center;
 }
 
