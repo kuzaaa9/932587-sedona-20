@@ -4,10 +4,6 @@
   @include list-reset;
 }
 
-// @media (min-width:$tablet-width) {
-//
-// }
-
 .user-group__wrap {
   display: flex;
   justify-content: space-between;
@@ -19,7 +15,7 @@
   display: block;
   flex-grow: 1;
   box-sizing: border-box;
-  padding: 15px 0 15px 20px;
+  padding: 16px 0 16px 20px;
   background: $color-secondary;
   outline: none;
   border: none;
@@ -43,7 +39,7 @@
 
 .user-group__label {
   display: block;
-  padding-right: 10px;
+  padding-right: 15px;
 
   @include text-label;
 }
