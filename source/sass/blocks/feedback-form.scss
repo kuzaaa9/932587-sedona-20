@@ -22,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback-form {
-    padding: 0 120px 65px;
+    padding: 0 120px;
   }
 }
 
@@ -38,15 +38,9 @@
 @media (min-width: $tablet-width) {
   .feedback-form__item {
     width: 1080px;
-    padding: 0 0 30px;
+    padding: 0 20px;
     border: 0;
     border-top: 1px solid $color-secondary-active;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .feedback-form__item {
-    padding-bottom: 30px;
   }
 }
 
@@ -95,7 +89,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form__heading {
-    padding-bottom: 20px;
+    padding-bottom: 55px;
 
     @include text-heading-tablet;
   }
@@ -105,7 +99,7 @@
   .feedback-form__item:nth-child(1),
   .feedback-form__item:nth-child(3) {
     .feedback-form__heading {
-      padding: 20px 0 40px;
+      padding: 20px 0 30px;
       text-align: start;
     }
   }
@@ -126,7 +120,6 @@
 .feedback-form__comment {
   display: block;
   width: 100%;
-  margin: 35px 0 15px;
   padding: 15px;
   box-sizing: border-box;
 
@@ -137,9 +130,15 @@
   background: $color-secondary;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form__comment {
+    margin: 26px 0 0;
+  }
+}
 
 .feedback-form__button-wrapp {
-  padding-bottom: 40px;
+  margin: 50px 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -147,8 +146,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 0;
-    padding: 0 0 25px 0;
+    margin: 58px 0;
   }
 }
 
