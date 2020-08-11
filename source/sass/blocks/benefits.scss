@@ -2,10 +2,8 @@
   padding: 0;
 
   @include list-reset;
-}
 
-@media (min-width: $tablet-width) {
-  .benefits__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,100 +41,83 @@
   padding: 40px 20px 40px;
   margin: 0 auto;
   box-sizing: border-box;
-}
 
-@media (min-width: $tablet-width) {
-  .benefits__content {
+  @media (min-width: $tablet-width) {
     width: 256px;
     padding: 40px 35px 25px;
     margin: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .benefits__content {
+  @media (min-width: $desktop-width) {
     width: 400px;
     padding: 40px 50px 25px;
   }
 }
 
+.benefits__snapshot {
+  width: 320px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
 .benefits__item--first {
   .benefits__snapshot {
-    width: 320px;
-    height: 260px;
     background-image: url("../img/main-city-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    // background-image: url("../img/main-city-mobile@2x.jpg");
-    // }
-  }
-}
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-city-mobile@2x.jpg");
+    }
 
-@media (min-width: $tablet-width) {
-  .benefits__item--first {
-    .benefits__snapshot {
-      width: 512px;
+    @media (min-width: $tablet-width) {
       background-image: url("../img/main-city-tablet@1x.jpg");
 
-      // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      // background-image: url("../img/main-city-tablet@2x.jpg");
-      // }
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-city-tablet@2x.jpg");
+      }
     }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .benefits__item--first {
-    .benefits__snapshot {
-      width: 800px;
+    @media (min-width: $desktop-width) {
       background-image: url("../img/main-city-desktop@1x.jpg");
 
-      // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
-      // background-image: url("../img/main-city-desktop@2x.jpg");
-      // }
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-city-desktop@2x.jpg");
+      }
     }
   }
 }
 
 .benefits__item--second {
   .benefits__snapshot {
-    width: 320px;
-    height: 260px;
-    background-image: url("../img/photo-bridge-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
 
-    // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
-    // background-image: url("../img/photo-bridge-mobile@2x.jpg");
-    // }
-  }
-}
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-bridge-mobile@2x.jpg");
+    }
 
-@media (min-width: $tablet-width) {
-  .benefits__item--second {
-    .benefits__snapshot {
-      width: 512px;
-      background-image: url("../img/photo-bridge-tablet@1x.jpg");
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/main-bridge-tablet@1x.jpg");
       order: -1;
 
-      // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
-      // background-image: url("../img/photo-bridge-tablet@2x.jpg");
-      // }
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-bridge-tablet@2x.jpg");
+      }
     }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .benefits__item--second {
-    .benefits__snapshot {
-      width: 800px;
-      background-image: url("../img/photo-bridge-desktop@1x.jpg");
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/main-bridge-desktop@1x.jpg");
 
-      // @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
-      // background-image: url("../img/photo-bridge-desktop@2x.jpg");
-      // }
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-bridge-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -148,12 +129,8 @@
     margin: 0 20px;
     padding: 24px 22px;
     border-bottom: 1px solid #d6d6d6;
-  }
-}
 
-@media (min-width: $tablet-width) {
-  .benefits__item--gray {
-    .benefits__content {
+    @media (min-width: $tablet-width) {
       margin: 0;
       padding: 40px 20px 20px;
       border-bottom: none;
@@ -175,10 +152,8 @@
   @include text-heading;
   color: $text-heading-color;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .benefits__subtitle {
+  @media (min-width: $tablet-width) {
     width: 150px;
 
     @include text-heading-tablet;
