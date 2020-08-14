@@ -1,13 +1,7 @@
-.map-sedona {
+.map-sedona__img {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   height: 350px;
-  background-image: url("../img/bg-map-mobile@1x.jpg");
-
-  // @media (min-resolution:$retina-dpi), (min-resolution:$retina-dppx) {
-  // background-image: url("../img/bg-map-mobile@2x.jpg");
-  //
-  // }
 
   &::before {
     content: "";
@@ -20,26 +14,13 @@
     left: 50%;
     margin-left: -13px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .map-sedona {
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-
-    // @media (min-resolution:$retina-dpi), (min-resolution:$retina-dppx) {
-    // background-image: url("../img/bg-map-tablet@2x.jpg");
-    //
-    // }
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 350px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .map-sedona {
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-
-    // @media (min-resolution:$retina-dpi), (min-resolution:$retina-dppx) {
-    // background-image: url("../img/bg-map-mobile@2x.jpg");
-    //
-    // }
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }

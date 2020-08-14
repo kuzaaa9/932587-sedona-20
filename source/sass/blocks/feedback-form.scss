@@ -2,26 +2,16 @@
   margin: 0;
   padding: 0;
   border-top: 1px solid $color-secondary-active;
-}
 
-@media (min-width: $tablet-width) {
-  .feedback-form {
-    border-top: 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .feedback-form {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 60px;
     border-top: 0 none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .feedback-form {
+  @media (min-width: $desktop-width) {
     padding: 0 120px;
   }
 }
@@ -33,16 +23,19 @@
   padding: 0 20px 0;
   border: 0;
   border-bottom: 1px solid $color-secondary-active;
-}
 
-@media (min-width: $tablet-width) {
-  .feedback-form__item {
-    width: 1080px;
+  @media (min-width: $tablet-width) {
+    width: 648px;
     padding: 0 20px;
     border: 0;
     border-top: 1px solid $color-secondary-active;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1),
@@ -68,10 +61,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  width: 960px;
-}
-
-@media (min-width: $desktop-width) {
   .feedback-form__item:nth-child(1),
   .feedback-form__item:nth-child(3) {
     width: 480px;
@@ -85,10 +74,8 @@
   @include text-heading;
   color: $text-heading-color;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .feedback-form__heading {
+  @media (min-width: $tablet-width) {
     padding-bottom: 55px;
 
     @include text-heading-tablet;
@@ -103,13 +90,9 @@
       text-align: start;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .feedback-form__item:nth-child(3) {
-    .feedback-form__heading {
-      padding-left: 75px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 75px;
   }
 }
 
@@ -120,18 +103,16 @@
 .feedback-form__comment {
   display: block;
   width: 100%;
-  padding: 15px;
   box-sizing: border-box;
+  padding: 15px;
 
   @include text-heading;
   text-transform: none;
   border: none;
   outline: none;
   background: $color-secondary;
-}
 
-@media (min-width: $tablet-width) {
-  .feedback-form__comment {
+  @media (min-width: $tablet-width) {
     margin: 26px 0 0;
   }
 }
@@ -139,10 +120,8 @@
 .feedback-form__button-wrapp {
   margin: 50px 0;
   padding: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .feedback-form__button-wrapp {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -158,10 +137,8 @@
 
   @include text-heading-tablet;
   color: $text-secondary-color;
-}
 
-@media (min-width: $tablet-width) {
-  .feedback-form__button {
+  @media (min-width: $tablet-width) {
     width: 50%;
     margin: 0;
   }
@@ -169,11 +146,10 @@
 
 .feedback-form__correction {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .feedback-form__correction {
-    @include text-label;
+  @media (min-width: $tablet-width) {
     display: block;
+
+    @include text-label;
   }
 }

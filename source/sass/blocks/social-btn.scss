@@ -1,4 +1,4 @@
-.social-btn-list {
+.social-btn {
   display: flex;
   justify-content: space-between;
   width: 150px;
@@ -6,19 +6,21 @@
   @include list-reset;
 }
 
-.social-btn-list__link {
+.social-btn__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 45px;
   height: 45px;
   background: $color-main;
+  color: $text-secondary-color;
 }
 
-.social-btn-list__link:hover {
+.social-btn__link:hover {
   background-color: $color-main-hover;
 }
 
-.social-btn-list__link:active {
+.social-btn__link:active {
   background-color: $color-main-active;
+  color: #88b6d1;
 }
