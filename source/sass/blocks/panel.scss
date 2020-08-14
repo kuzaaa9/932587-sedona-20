@@ -1,9 +1,7 @@
 .panel {
   width: 280px;
-}
 
-@media (min-width: $tablet-width) {
-  .panel {
+  @media (min-width: $tablet-width) {
     width: 100%;
   }
 }
@@ -12,12 +10,10 @@
   height: 45px;
   padding: 20px 20px;
   box-sizing: border-box;
-  background-color: $color-accent;
-  opacity: 60%;
-}
+  background-color: #000000;
+  opacity: 0.6;
 
-@media (min-width: $tablet-width) {
-  .panel__elements {
+  @media (min-width: $tablet-width) {
     padding: 45px 160px 45px 90px;
   }
 }
@@ -45,40 +41,61 @@
   justify-content: space-between;
   height: 65px;
   padding: 0 23px;
+  margin: 0 auto;
   box-sizing: border-box;
   align-items: center;
   background: $color-secondary;
-}
+  color: #000000;
 
-@media (min-width: $tablet-width) {
-  .panel__buttons {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     top: 0;
     left: 0;
+    width: 648px;
     height: 95px;
-    padding: 0 35px 0 40px;
+    padding: 0 35px;
     background-color: transparent;
+    color: #ffffff;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
   }
 }
 
 .panel__replay {
-  padding-right: 135px;
+  padding: 0;
+  border: 0;
+  outline: none;
 }
 
-@media (min-width: $tablet-width) {
-  .panel__replay {
-    padding-right: 475px;
+.panel__subtitles {
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 430px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .panel__replay {
-    padding-right: 625px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .panel__subtitles {
-    padding-right: 30px;
+  @media (min-width: $desktop-width) {
+    padding-left: 570px;
   }
 }
