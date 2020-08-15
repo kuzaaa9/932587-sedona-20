@@ -7,29 +7,23 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
-}
 
-@media (min-width: $tablet-width) {
-  .footer {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     height: 120px;
     padding: 35px 60px 35px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .footer {
+  @media (min-width: $desktop-width) {
     padding: 35px 115px 35px;
   }
 }
 
 .footer__hashtag {
   @include text-heading-tablet;
-}
 
-@media (min-width: $tablet-width) {
-  .footer__hashtag {
+  @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
 }

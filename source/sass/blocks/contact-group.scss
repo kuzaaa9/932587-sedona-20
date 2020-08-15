@@ -3,16 +3,12 @@
   padding: 0;
 
   @include list-reset;
-}
 
-@media (min-width: $tablet-width) {
-  .contact-group {
+  @media (min-width: $tablet-width) {
     width: 100%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contact-group {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
@@ -22,29 +18,23 @@
 .contact-group__wrap {
   margin: 0 auto;
   padding-bottom: 15px;
-}
 
-@media (min-width: $tablet-width) {
-  .contact-group__wrap {
+  @media (min-width: $tablet-width) {
     width: 100%;
     padding-bottom: 15px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contact-group__wrap {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 50%;
     padding-bottom: 0;
     align-items: center;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .contact-group__wrap:first-child {
-    padding-right: 75px;
-    box-sizing: border-box;
+    &:first-child {
+      padding-right: 75px;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -54,16 +44,12 @@
   padding: 0 20px 10px;
 
   @include text-label;
-}
 
-@media (min-width: $tablet-width) {
-  .contact-group__label {
+  @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contact-group__label {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -78,16 +64,12 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-}
 
-@media (min-width: $tablet-width) {
-  .contact-group__input-wrap {
+  @media (min-width: $tablet-width) {
     width: 100%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contact-group__input-wrap {
+  @media (min-width: $desktop-width) {
     width: 315px;
   }
 }
