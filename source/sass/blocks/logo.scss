@@ -9,10 +9,8 @@
 .logo__img {
   width: 102px;
   height: 84px;
-}
 
-@media (min-width: $desktop-width) {
-  .logo__img {
+  @media (min-width: $desktop-width) {
     width: 187px;
     height: 97px;
   }

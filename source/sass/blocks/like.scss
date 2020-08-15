@@ -11,23 +11,20 @@
   padding-left: 40px;
   border: none;
   outline: none;
-}
 
-@media (min-width: $tablet-width) {
-  .like__btn {
+  @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
     bottom: 0;
     margin-bottom: 15px;
     width: 65px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .like__btn {
+  @media (min-width: $desktop-width) {
     color: $text-secondary-color;
   }
 }
+
 
 .like__number {
   @include text-content;
