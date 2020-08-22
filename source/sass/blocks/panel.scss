@@ -10,11 +10,15 @@
   height: 45px;
   padding: 20px 20px;
   box-sizing: border-box;
-  background-color: #000000;
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
 
   @media (min-width: $tablet-width) {
+    width: 648px;
     padding: 45px 160px 45px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
   }
 }
 
@@ -35,9 +39,10 @@
   background-color: #858585;
 }
 
-.panel__buttons {
-  display: flex;
+.panel__wrap {
   position: relative;
+  display: flex;
+  width: 100%;
   justify-content: space-between;
   height: 65px;
   padding: 0 23px;
@@ -45,8 +50,21 @@
   box-sizing: border-box;
   align-items: center;
   background: $color-secondary;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95px;
+    padding: 0 35px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: #ffffff;
+  }
+}
+
+.panel__button {
   &:hover {
     opacity: 1;
   }
@@ -54,20 +72,10 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    width: 648px;
-    height: 95px;
-    padding: 0 35px;
-    background-color: transparent;
-    color: #ffffff;
-    opacity: 0.6;
-
+@media (min-width: $tablet-width) {
+  .panel__button {
     &:hover {
       opacity: 1;
     }
@@ -76,19 +84,15 @@
       opacity: 0.3;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    width: 800px;
-  }
 }
 
-.panel__replay {
+.panel--replay {
   padding: 0;
   border: 0;
   outline: none;
 }
 
-.panel__subtitles {
+.panel--subtitles {
   padding-left: 70px;
 
   @media (min-width: $tablet-width) {

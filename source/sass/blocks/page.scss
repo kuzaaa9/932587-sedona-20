@@ -9,10 +9,8 @@
   padding: 40px 20px 20px;
   margin: 0;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .page__intro {
+  @media (min-width: $tablet-width) {
     width: 520px;
     margin: 0 auto;
     padding: 30px 10px 35px;
@@ -29,21 +27,19 @@
   }
 }
 
-.page--main {
-  .page__intro {
-    @include text-label;
+.page--main > .page__intro {
+  @include text-label;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -19px;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      border-style: solid;
-      border-width: 19px 160px 0 160px;
-      border-color: #ffffff transparent transparent transparent;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-style: solid;
+    border-width: 19px 160px 0 160px;
+    border-color: #ffffff transparent transparent transparent;
   }
 }
 
@@ -53,10 +49,8 @@
 
   @include text-heading;
   color: $text-heading-color;
-}
 
-@media (min-width: $tablet-width) {
-  .page__heading {
+  @media (min-width: $tablet-width) {
     padding-bottom: 31px;
     font-size: 30px;
     line-height: 26px;

@@ -1,3 +1,4 @@
+@import "normalize";
 @import "mixins";
 @import "colors";
 @import "variables";
@@ -14,7 +15,6 @@
 @import "blocks/feedback";
 @import "blocks/find-hotel";
 @import "blocks/footer";
-@import "blocks/fullscreen-btn";
 @import "blocks/like";
 @import "blocks/logo";
 @import "blocks/main-header";
@@ -33,8 +33,6 @@
 @import "blocks/promo";
 @import "blocks/radio-field";
 @import "blocks/radio-group";
-@import "blocks/replay-btn";
 @import "blocks/site-list";
 @import "blocks/social-btn";
-@import "blocks/subtitles-btn";
 @import "blocks/user-group"

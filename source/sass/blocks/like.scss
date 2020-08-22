@@ -8,7 +8,7 @@
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-color: transparent;
-  padding-left: 40px;
+  padding-left: 30px;
   border: none;
   outline: none;
 
@@ -21,13 +21,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $text-secondary-color;
+    background-image: url("../img/icon-like-desktop.svg");
   }
 }
 
-
 .like__number {
   @include text-content;
-
   font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    color: $text-secondary-color;
+  }
 }

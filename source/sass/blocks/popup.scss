@@ -11,10 +11,8 @@
   padding: 0 0 35px;
 
   @include text-heading;
-}
 
-@media (min-width: $tablet-width) {
-  .popup__heading {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
     font-weight: bold;
@@ -24,27 +22,18 @@
 .popup__info {
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 
   @include text-content;
-}
 
-@media (min-width: $tablet-width) {
-  .popup__info {
+  @media (min-width: $tablet-width) {
     padding-bottom: 35px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .popup__button-wrap {
-    padding: 45px 90px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .popup__button {
-    padding: 15px 120px;
-
     @include text-heading-tablet;
 
     color: $text-secondary-color;
