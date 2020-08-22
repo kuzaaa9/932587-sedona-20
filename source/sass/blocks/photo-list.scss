@@ -1,23 +1,21 @@
 .photo-list {
   @include list-reset;
-}
+  border-top: 1px solid $color-secondary-active;
 
-@media (min-width: $tablet-width) {
-  .photo-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px 0 25px;
+    border-top: none;
   }
 }
 
 .photo-list__item {
   padding: 20px 20px 0;
   border-bottom: 1px solid $color-secondary-active;
-}
 
-@media (min-width: $tablet-width) {
-  .photo-list__item {
+  @media (min-width: $tablet-width) {
     padding: 0;
     border-bottom: none;
   }
@@ -30,17 +28,13 @@
 
 .photo-list__img {
   display: block;
-}
 
-@media (min-width: $tablet-width) {
-  .photo-list__img {
+  @media (min-width: $tablet-width) {
     width: 324px;
     height: 265px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .photo-list__img {
+  @media (min-width: $desktop-width) {
     width: 400px;
   }
 }
@@ -49,12 +43,10 @@
   .photo-list__img--first {
     width: 648px;
     height: 400px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .photo-list__img--first {
-    width: 1200px;
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
   }
 }
 
@@ -62,12 +54,9 @@
   margin: 0;
   padding: 15px 0 20px;
   box-sizing: border-box;
-}
 
-@media (min-width: $tablet-width) {
-  .photo-list__figcaption {
+  @media (min-width: $tablet-width) {
     padding: 15px 20px;
-    background-color: $color-secondary;
   }
 }
 
@@ -85,8 +74,7 @@
     bottom: 0;
     width: 100%;
     padding: 15px 20px;
-    background-color: #181f08;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -95,15 +83,10 @@
   padding-bottom: 5px;
 
   @include text-content;
-
   color: $text-heading-color;
-
   font-weight: bold;
-}
 
-@media (min-width: $desktop-width) {
-  .photo-list__heading,
-  .photo-list__author {
+  @media (min-width: $desktop-width) {
     color: $text-secondary-color;
   }
 }
@@ -112,6 +95,9 @@
   margin: 0;
 
   @include text-content;
-
   text-transform: none;
+
+  @media (min-width: $desktop-width) {
+    color: $text-secondary-color;
+  }
 }

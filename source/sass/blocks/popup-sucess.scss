@@ -1,10 +1,8 @@
 // / Окно- ваш отзыв отправлен на мобилке
 .popup-sucess {
   padding: 40px 0 0;
-}
 
-@media (min-width: $tablet-width) {
-  .popup-sucess {
+  @media (min-width: $tablet-width) {
     width: 645px;
     padding-top: 50px;
   }
@@ -25,6 +23,10 @@
 .popup-sucess__wrap {
   padding: 20px;
   background-color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px;
+  }
 }
 
 .popup-sucess__button {
@@ -33,4 +35,8 @@
   margin: 0 auto;
 
   @include text-heading;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 140px;
+  }
 }

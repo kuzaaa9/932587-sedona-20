@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="main-nav__line"></span>
           <span class="visually-hidden">Открыть меню</span>
@@ -159,23 +159,23 @@
             </button>
             <p class="feedback-form__correction">*-обязательные поля</p>
           </div>
-          <div class="popup popup-failure popup-failure--closed">
+          <div class="popup popup-failure popup-failure--closed popup-failure--js">
             <h2 class="popup__heading popup-failure__heading">Что-то пошло не так!
             </h2>
             <p class="popup__info popup-failure__info">
               Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить
             </p>
-            <button class="button popup-failure__button popup-failure__button--js" type="button">Ок
+            <button class="button popup-failure__button" type="button">Ок
             </button>
           </div>
-          <div class="popup popup-sucess popup-sucess--closed">
+          <div class="popup popup-sucess popup-sucess--closed popup-sucess--js">
             <h2 class="popup__heading popup-sucess__heading">Ваш отзыв отправлен!
             </h2>
             <p class="popup__info popup-sucess__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
               В ближайшее время мы опубликуем его на сайте.
             </p>
             <div class="popup-sucess__wrap">
-              <button class="button popup-sucess__button popup-sucess__button--js" type="button">Закрыть окно
+              <button class="button popup-sucess__button" type="button">Закрыть окно
               </button>
             </div>
           </div>
@@ -233,5 +233,23 @@
       </div>
     </footer>
   </div>
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      }
+
+      else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    }
+    );
+  </script>
 </body>
 </html>

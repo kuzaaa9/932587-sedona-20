@@ -1,10 +1,8 @@
 // чтото пошло не так мобилка
 .popup-failure {
   padding: 40px 55px 35px 55px;
-}
 
-@media (min-width: $tablet-width) {
-  .popup-failure {
+  @media (min-width: $tablet-width) {
     width: 400px;
     padding: 55px 45px 50px 45px;
   }
@@ -32,14 +30,14 @@
 
 .popup-failure__button {
   display: block;
-  padding: 17px 80px;
+  padding: 16px 75px;
   margin: 0 auto;
 
   @include text-heading;
 }
 
 @media (min-width: $tablet-width) {
-  .popup__button {
+  .popup-failure__button {
     padding: 15px 120px;
 
     @include text-heading-tablet;

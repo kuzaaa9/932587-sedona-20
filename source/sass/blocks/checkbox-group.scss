@@ -1,11 +1,8 @@
 .checkbox-group {
   @include list-reset;
-
   padding: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .checkbox-group {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
