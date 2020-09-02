@@ -1,10 +1,15 @@
-// чтото пошло не так мобилка
 .popup-failure {
+  position: fixed;
+  z-index: 9999;
+  top: 60%;
+  left: 0;
+  right: 0;
   padding: 40px 55px 35px 55px;
+  background-color: $text-secondary-color;
+
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    padding: 55px 45px 50px 45px;
   }
 }
 
@@ -12,7 +17,7 @@
   display: none;
 }
 
-.popup-failure--opened {
+.popup-failure--opened .popup-failure {
   display: block;
 }
 

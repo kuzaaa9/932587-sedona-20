@@ -6,7 +6,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    min-height: 56px;
     width: auto;
     margin: 0;
     padding: 0;
@@ -17,11 +16,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
   margin-bottom: 12px;
   margin-right: 20px;
-  width: 27px;
-  height: 27px;
+  width: 25px;
+  height: 25px;
   padding: 0;
   border: 0;
   outline: none;
@@ -35,20 +33,15 @@
 
 .main-nav__logo {
   position: absolute;
-  z-index: 1;
-  top: 0;
+  bottom: -31px;
   left: 50%;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    width: 153px;
-    align-items: center;
-    text-align: center;
+    top: 0;
   }
 }
 
-
-// Закрыто мобильное меню - main-nav--closed
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -85,7 +78,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 33px;
+    width: 30px;
     height: 4px;
     background-color: rgba(255, 255, 255, 1);
   }
@@ -114,34 +107,27 @@
   }
 }
 
-// 2 стилизация сите- лист
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav--closed .site-list {
   display: none;
-}
 
-// Открыто мобильное меню
-.main-nav--opened {
-  padding-bottom: 0;
-}
-
-.main-nav--opened .site-list {
-  display: block;
-}
-
-// При открытом мобильном меню на телефоне логотип отсутствует
-.main-nav--opened .logo {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav--closed .site-list,
-  .main-nav--opened .site-list {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav--opened .logo {
-    display: block;
+.main-nav--opened .site-list,
+.main-nav--nojs .site-list {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
+}
+
+.main-nav--nojs .site-list__link {
+  @include text-nav-menu;
 }
