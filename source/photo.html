@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   <title>HTML Academy:Седона-страница фото</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle " type="button">
-          <span class="main-nav__line"></span>
+          <span class="main-nav__line"></span>-
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
@@ -244,23 +244,6 @@
       </div>
     </footer>
   </div>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      }
-
-      else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    }
-    );
-  </script>
+  <script src="js/openmenu.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   <title>HTML Academy:Седона-главная страница</title>
 </head>
 <body>
@@ -53,7 +53,7 @@
     <main class="page page--main">
       <div class="page__intro">
         <h1 class="page__heading ">
-          Седона — небольшой городок в АРИЗОНЕ, <br> заслуживающий большего!
+          Седона — небольшой <br>городок в АРИЗОНЕ, заслуживающий большего!
         </h1>
         <p class="page__subheading">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
@@ -198,23 +198,6 @@
       </div>
     </footer>
   </div>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      }
-
-      else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    }
-    );
-  </script>
+  <script src="js/openmenu.js"></script>
 </body>
 </html>
