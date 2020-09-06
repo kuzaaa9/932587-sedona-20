@@ -3,8 +3,8 @@
   height: 389px;
   box-sizing: border-box;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
