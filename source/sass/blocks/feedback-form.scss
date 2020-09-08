@@ -85,7 +85,7 @@
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1) .feedback-form__heading,
   .feedback-form__item:nth-child(3) .feedback-form__heading {
-    // padding: 20px 0 30px;
+    padding: 20px 0;
     text-align: start;
   }
 

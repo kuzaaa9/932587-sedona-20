@@ -18,7 +18,6 @@
   }
 }
 
-// 1-Скрываем настоящий чекбокс
 .checkbox-field__input {
   position: absolute;
   z-index: -1;
@@ -54,7 +53,6 @@
   background: $color-secondary;
 }
 
-// 3 Делаем значок чека галку
 .checkbox-field__label::after {
   content: "";
   position: absolute;
@@ -62,12 +60,8 @@
   margin-left: 14px;
   width: 19px;
   height: 13px;
-  border-bottom: 4px solid $text-primary-color;
-  border-left: 4px solid $text-primary-color;
-  transform: rotate(-45deg);
 }
 
-// 4 Делаем состояние псевдочекбокса в покое и чека(галки) НЕЧЕКНУТОГО и без наведения на лейбл- он спрятан,то есть просто смотрим на страницу и не трогаем
 .checkbox-field__input + .checkbox-field__label::before {
   background-color: $color-secondary;
 }
@@ -76,22 +70,22 @@
   content: none;
 }
 
-// 5 Делаем состояние наведении  на лейбл (или псевдоинпут(квадрат)),но НЕЧЕКНУТОГО
 .checkbox-field__input:hover + .checkbox-field__label::before {
   background-color: $color-secondary-hover;
 }
 
-.checkbox-field__input:hover + .checkbox-field__label::after {
-  content: "";
-}
-
-// 6 Делаем состояние активности  на лейбл (или псевдоинпут(квадрат)),но c ЧЕКНУТОтым маленььким
 .checkbox-field__input:active + .checkbox-field__label::before {
   background-color: $color-secondary-active;
 }
 
+.checkbox-field__input:active + .checkbox-field__label::after,
 .checkbox-field__input:checked + .checkbox-field__label::after {
   content: "";
-  border-bottom: 5px solid #a8a8a8;
-  border-left: 5px solid #a8a8a8;
+  border-bottom: 4px solid $text-primary-color;
+  border-left: 4px solid $text-primary-color;
+  transform: rotate(-45deg);
+}
+
+.checkbox-field__input:active + .checkbox-field__label::after {
+  opacity: 0.3;
 }

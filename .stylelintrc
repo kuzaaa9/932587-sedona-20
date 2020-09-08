@@ -1,5 +1,6 @@
 {
   "extends": "stylelint-config-htmlacademy",
+  "ignoreFiles": "**/normalize.scss",
 
   "rules": {
     "declaration-no-important": true,
