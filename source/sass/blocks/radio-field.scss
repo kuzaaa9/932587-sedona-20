@@ -2,7 +2,6 @@
   padding-bottom: 20px;
 }
 
-// 1- скрываем радиобаттон
 .radio-field__input[type="radio"] {
   position: absolute;
   z-index: -1;
@@ -20,7 +19,6 @@
   text-transform: none;
 }
 
-//  2 Делаем псевдоинпут - шар большой
 .radio-field__label::before {
   content: "";
   position: absolute;
@@ -32,20 +30,16 @@
   background: $color-secondary;
 }
 
-// 3 Делаем значок чека -шар маленький
 .radio-field__label::after {
   content: "";
   position: absolute;
-  top: center;
   left: 0;
   margin-left: 15px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: $text-primary-color;
 }
 
-// 4 Делаем состояние большого шара в покое и чека(маленького шарика) НЕЧЕКНУТОГО и без наведения на лейбл- он спрятан, то есть просто смотрим на страницу и не трогаем
 .radio-field__input + .radio-field__label::before {
   background-color: $color-secondary;
 }
@@ -54,7 +48,6 @@
   content: none;
 }
 
-// 5 Делаем состояние наведении  на лейбл (или псевдоинпут(большого шарика)),но НЕЧЕКНУТОГО
 .radio-field__input:hover + .radio-field__label::before {
   background-color: $color-secondary-hover;
 }
@@ -63,22 +56,16 @@
   content: "";
 }
 
-// 6 Делаем состояние ЧЕКНУТОГО  на лейбл (или псевдоинпут(большого шарика)),но c ЧЕКНУТОтым маленььким
 .radio-field__input:active + .radio-field__label::before {
   background-color: $color-secondary-active;
 }
 
 .radio-field__input:checked + .radio-field__label::after {
   content: "";
-  background-color: #a4a4a4;
+  background-color: $text-primary-color;
 }
 
-// 6 Делаем состояние ПОКОЯ В НЕАКТИВНОМ ПОЛОЖЕНИИ  на лейбл (или псевдоинпут(большого шарика)),но c ЧЕКНУТОтым маленььким
-// .radio-field__input + .radio-field__label::before {
-// background-color: $color-secondary;
-// }
-
-// .radio-field__input:checked + .radio-field__label:after {
-// content: "";
-// background-color: $text-primary-color;
-// }
+.radio-field__input:active + .radio-field__label::after {
+  content: "";
+  background-color: #a4a4a4;
+}

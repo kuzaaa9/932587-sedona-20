@@ -1,23 +1,21 @@
 .more-list {
   background-color: $color-background;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   width: 100%;
 }
 
 .more-list__wrapp {
-  display: block;
-  padding: 20px 0;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  row-gap: 20px;
   text-align: start;
   margin: 0;
 
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     padding: 0;
 
