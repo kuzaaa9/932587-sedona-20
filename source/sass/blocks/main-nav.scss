@@ -130,4 +130,9 @@
 
 .main-nav--nojs .site-list__link {
   @include text-nav-menu;
+
+  @media (min-width: $tablet-width) {
+    @include text-label;
+    color: #000000;
+  }
 }

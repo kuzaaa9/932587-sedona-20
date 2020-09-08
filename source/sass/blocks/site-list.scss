@@ -31,6 +31,7 @@
 
   &:hover {
     background-color: $color-main-hover;
+    cursor: pointer;
   }
 
   &:active {
@@ -98,8 +99,8 @@
   }
 }
 
-.site-list__item:active .site-list__link {
-  color: #88b6d1;
+.main-nav--nojs .site-list__item {
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
