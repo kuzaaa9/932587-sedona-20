@@ -1,7 +1,7 @@
 .feedback-form {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border-top: 1px solid $color-secondary-active;
 
   @media (min-width: $tablet-width) {
@@ -21,13 +21,13 @@
   display: block;
   box-sizing: border-box;
   margin: 0;
-  padding: 0 20px 0;
+  padding: 0;
   border: 0;
   border-bottom: 1px solid $color-secondary-active;
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    padding: 0 20px;
+    padding: 0;
     border: 0;
     border-top: 1px solid $color-secondary-active;
   }
@@ -64,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1) {
     padding-left: 55px;
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
   }
 }
 
@@ -76,16 +76,16 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 55px;
+    // padding-bottom: 55px;
 
     @include text-heading-tablet;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .feedback-form__item:nth-child(1) > .feedback-form__heading,
-  .feedback-form__item:nth-child(3) > .feedback-form__heading {
-    padding: 20px 0 30px;
+  .feedback-form__item:nth-child(1) .feedback-form__heading,
+  .feedback-form__item:nth-child(3) .feedback-form__heading {
+    // padding: 20px 0 30px;
     text-align: start;
   }
 
@@ -111,7 +111,7 @@
   background: $color-secondary;
 
   @media (min-width: $tablet-width) {
-    margin: 26px 0 0;
+    margin: 35px 0 0;
   }
 }
 
