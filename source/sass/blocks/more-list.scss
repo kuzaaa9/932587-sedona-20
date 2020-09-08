@@ -71,13 +71,11 @@
   @include text-content-tablet;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 5px;
-
     @include text-content-tablet;
   }
 }
 
-.more-list__item--icon1::before {
+.more-list__item--icon-house::before {
   display: block;
   content: "";
   position: absolute;
@@ -86,31 +84,27 @@
   margin-top: 15px;
   margin-left: 15px;
   width: 39px;
-  height: 37px;
+  height: 38px;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
-  .more-list__item--icon1 {
+  .more-list__item--icon-house {
     order: 1;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 0;
       left: 50%;
       margin-left: -38px;
       margin-top: 61px;
       width: 75px;
       height: 72px;
-      background-image: url("../img/icon-house.svg");
     }
   }
 }
 
-.more-list__item--icon2::before {
+.more-list__item--icon-gift::before {
   content: "";
   position: absolute;
   top: 0;
@@ -121,55 +115,47 @@
   height: 38px;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
-  .more-list__item--icon2 {
+  .more-list__item--icon-gift {
     order: 3;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 0;
       left: 50%;
       margin-left: -32px;
       margin-top: 60px;
       width: 64px;
-      height: 75px;
-      background-image: url("../img/icon-gift.svg");
+      height: 76px;
     }
   }
 }
 
-.more-list__item--icon3::before {
+.more-list__item--icon-burger::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   margin-top: 15px;
   margin-left: 15px;
-  width: 40px;
-  height: 35px;
+  width: 41px;
+  height: 38px;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
-  .more-list__item--icon3 {
+  .more-list__item--icon-burger {
     order: 2;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 0;
       left: 50%;
       margin-left: -38px;
       margin-top: 60px;
       width: 76px;
       height: 68px;
-      background-image: url("../img/icon-burger.svg");
     }
   }
 }

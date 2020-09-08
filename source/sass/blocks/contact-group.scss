@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 45px 0;
   }
 }
 
@@ -21,7 +21,6 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +31,7 @@
     align-items: center;
 
     &:first-child {
-      padding-right: 75px;
+      padding-right: 80px;
       box-sizing: border-box;
     }
   }
