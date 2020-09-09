@@ -3,6 +3,10 @@
   margin: 0;
   padding: 20px 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .more-list__wrapp {
@@ -16,6 +20,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
     text-align: center;
     padding: 0;
 
