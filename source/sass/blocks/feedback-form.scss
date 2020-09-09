@@ -64,7 +64,6 @@
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1) {
     padding-left: 55px;
-    // padding-bottom: 10px;
   }
 }
 
@@ -76,8 +75,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    // padding-bottom: 55px;
-
     @include text-heading-tablet;
   }
 }
@@ -104,7 +101,16 @@
   box-sizing: border-box;
   padding: 15px;
 
+  &::-webkit-input-placeholder {
+    color: #000000;
+  }
+
+  &:-moz-placeholder {
+    color: #000000;
+  }
+
   @include text-heading;
+  color: $text-heading-color;
   text-transform: none;
   border: none;
   outline: none;
