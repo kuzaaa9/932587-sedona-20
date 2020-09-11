@@ -1,7 +1,13 @@
-.map-sedona__img {
+.map-sedona {
   position: relative;
-  width: 320px;
+  margin: 0;
+  padding: 0;
   height: 350px;
+}
+
+.map-sedona__placeholder {
+  z-index: 1;
+  width: 100%;
 
   &::before {
     content: "";
@@ -14,13 +20,15 @@
     left: 50%;
     margin-left: -13px;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 350px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
+.map-sedona__iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 0;
 }
