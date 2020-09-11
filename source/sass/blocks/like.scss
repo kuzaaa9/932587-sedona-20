@@ -8,9 +8,10 @@
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-color: transparent;
-  padding-left: 30px;
+  padding-left: 25px;
   border: none;
   outline: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -22,6 +23,10 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/icon-like-desktop.svg");
+  }
+
+  &:focus {
+    opacity: 0.6;
   }
 }
 
