@@ -54,11 +54,14 @@
   display: block;
   margin: 0 auto;
   padding: 15px 35px;
+  box-sizing: border-box;
   background-color: $color-main;
 
   @include text-heading-tablet;
 
   color: $text-secondary-color;
+  text-decoration: none;
+
 
   &:hover {
     background-color: $color-main-hover;

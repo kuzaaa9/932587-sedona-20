@@ -26,6 +26,8 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -50,7 +52,7 @@ exports.html = html;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -64,7 +66,7 @@ exports.server = server;
 // Watcher
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
 }
 
 // Images
@@ -138,13 +140,6 @@ const build = gulp.series(
 
 exports.build = build;
 
-const start = gulp.series(
-  build,
-  server
-);
-
-exports.start = start;
-
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );
