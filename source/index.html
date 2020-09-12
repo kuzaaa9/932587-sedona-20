@@ -145,8 +145,11 @@
       <section class="map-sedona">
         <h2 class="visually-hidden">Карта расположения Седоны</h2>
         <picture class="map-sedona__placeholder">
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+          <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
           <img class="map-sedona__placeholder" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта Седоны">
         </picture>
         <iframe class="map-sedona__iframe" width="320" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-113.59039306640626%2C33.79056118537381%2C-110.00335693359375%2C35.902399875143644&amp;layer=mapnik&amp;marker=34.854148405456456%2C-111.79550950000004">
