@@ -50,12 +50,11 @@
   }
 }
 
-.find-hotel__btn {
+.find-hotel__button {
   display: block;
   margin: 0 auto;
   padding: 15px 35px;
   box-sizing: border-box;
-  background-color: $color-main;
 
   @include text-heading-tablet;
 
@@ -78,7 +77,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .find-hotel__btn {
+  .find-hotel__button {
     width: 458px;
   }
 }

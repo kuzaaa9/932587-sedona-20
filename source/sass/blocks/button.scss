@@ -7,7 +7,8 @@
   border: 0 none;
   outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-main-hover;
   }
 

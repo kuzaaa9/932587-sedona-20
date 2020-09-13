@@ -63,9 +63,9 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-  margin-left: 10px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 10px;
     width: 100%;
   }
 
@@ -84,6 +84,13 @@
   @include text-heading;
   color: $text-heading-color;
   text-transform: none;
+
+  &:active,
+  &:focus {
+    background-color: $color-background;
+    border: 4px solid $color-secondary-hover;
+    padding: 12px 16px;
+  }
 }
 
 .contact-group__input::-webkit-input-placeholder {

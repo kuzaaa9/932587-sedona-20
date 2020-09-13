@@ -23,13 +23,30 @@
   margin: 0;
   padding: 0;
   border: 0;
-  border-bottom: 1px solid $color-secondary-active;
+  padding-bottom: 30px;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 320px;
+    background: #d5d5d5;
+    display: block;
+    bottom: 0;
+    left: -20px;
+    right: 0;
+    position: absolute;
+  }
 
   @media (min-width: $tablet-width) {
     width: 648px;
     padding: 0;
     border: 0;
     border-top: 1px solid $color-secondary-active;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +57,7 @@
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1),
   .feedback-form__item:nth-child(3) {
-    width: 320px;
+    width: 50%;
     border-top: 0;
   }
 }
@@ -48,7 +65,6 @@
 @media (min-width: $desktop-width) {
   .feedback-form__item:nth-child(1),
   .feedback-form__item:nth-child(3) {
-    width: 480px;
     border-top: 0 none;
   }
 }
@@ -63,7 +79,13 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1) {
-    padding-left: 55px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item:nth-child(1) {
+    padding-left: 80px;
   }
 }
 
@@ -73,6 +95,7 @@
   @include text-heading;
   color: $text-heading-color;
   text-align: center;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     @include text-heading-tablet;
@@ -91,8 +114,10 @@
   }
 }
 
-.feedback-form__item--auxiliary {
-  border-bottom: 0;
+.feedback-form__item--noborder {
+  &::after {
+    display: none;
+  }
 }
 
 .feedback-form__comment {
@@ -119,10 +144,14 @@
   @media (min-width: $tablet-width) {
     margin: 35px 0 0;
   }
+
+  &:focus {
+    outline: 2px solid #a4a4a4;
+  }
 }
 
 .feedback-form__button-wrapp {
-  margin: 50px 0;
+  margin: 20px 0 50px;
   padding: 0;
 
   @media (min-width: $tablet-width) {

@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   <title>HTML Academy:Седона-страница фото</title>
 </head>
@@ -20,12 +22,12 @@
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link">
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
@@ -46,7 +48,7 @@
           </a>
         </div>
       </nav>
-      <div class="promo promo--extended">
+      <div class="promo promo--short">
         <img class="promo__img" src="img/text-sedona.svg" width="282" height="214" alt="Промо-текст">
       </div>
     </header>
@@ -80,8 +82,10 @@
                 </picture>
               </a>
               <figcaption class="photo-list__figcaption photo-list__figcaption--dark">
-                <p class="photo-list__heading">Неродные просторы</p>
-                <p class="photo-list__author">Автор фото: Борис</p>
+                <div class="photo-list__content">
+                  <p class="photo-list__heading">Неродные просторы</p>
+                  <p class="photo-list__author">Автор фото: Борис</p>
+                </div>
                 <div class="like">
                   <button class="like__btn" type="button">
                     <span class="like__number">1350
@@ -118,8 +122,10 @@
                 </picture>
               </a>
               <figcaption class="photo-list__figcaption">
-                <p class="photo-list__heading">Местная растительность</p>
-                <p class="photo-list__author"> Автор фото: Сергей</p>
+                <div class="photo-list__content">
+                  <p class="photo-list__heading">Местная растительность</p>
+                  <p class="photo-list__author"> Автор фото: Сергей</p>
+                </div>
                 <div class="like">
                   <button class="like__btn" type="button">
                     <span class="like__number">143
@@ -142,8 +148,10 @@
                   </picture>
                 </a>
                 <figcaption class="photo-list__figcaption photo-list__figcaption--dark">
-                  <p class="photo-list__heading">Дорога на север</p>
-                  <p class="photo-list__author">Автор фото: Петр</p>
+                  <div class="photo-list__content">
+                    <p class="photo-list__heading">Дорога на север</p>
+                    <p class="photo-list__author">Автор фото: Петр</p>
+                  </div>
                   <div class="like">
                     <button class="like__btn" type="button">
                       <span class="like__number">96
@@ -178,8 +186,10 @@
                   </picture>
                 </a>
                 <figcaption class="photo-list__figcaption photo-list__figcaption--dark">
-                  <p class="photo-list__heading">Мост дьявола </p>
-                  <p class="photo-list__author">Автор фото: Антон</p>
+                  <div class="photo-list__content">
+                    <p class="photo-list__heading">Мост дьявола </p>
+                    <p class="photo-list__author">Автор фото: Антон</p>
+                  </div>
                   <div class="like">
                     <button class="like__btn" type="button">
                       <span class="like__number">254
@@ -199,9 +209,7 @@
               </p>
             </div>
             <div class="player__wrapp">
-              <video class="player__screen">
-                <source src="" type="">
-              </video>
+              <video class="player__screen"></video>
               <div class="player__panel panel">
                 <div class="panel__elements">
                   <div class="panel__scale">

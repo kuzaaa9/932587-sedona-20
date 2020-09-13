@@ -1,5 +1,4 @@
 .popup-sucess {
-  position: fixed;
   top: 50%;
   left: 0;
   right: 0;
@@ -9,14 +8,6 @@
   @media (min-width: $tablet-width) {
     width: 645px;
   }
-}
-
-.popup-sucess--closed {
-  display: none;
-}
-
-.popup--sucess--opened .popup-sucess {
-  display: block;
 }
 
 .popup-sucess__info {
