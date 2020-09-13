@@ -1,7 +1,7 @@
 .more-list {
   background-color: $color-background;
   margin: 0;
-  padding: 20px 0;
+  padding: 25px 0 25px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
 .more-list__wrapp {
   display: grid;
   grid-template-rows: min-content min-content min-content;
-  row-gap: 20px;
+  row-gap: 0px;
   text-align: start;
   margin: 0;
 
@@ -20,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 0;
     text-align: center;
     padding: 0;
 
@@ -30,7 +30,7 @@
 
 .more-list__item {
   position: relative;
-  padding: 15px 40px 15px 70px;
+  padding: 10px 40px 10px 70px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -56,7 +56,7 @@
 .more-list__advantage {
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
 
   @include text-heading;
   color: $text-heading-color;
@@ -84,8 +84,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 5px;
+  margin-left: 20px;
   width: 39px;
   height: 38px;
   background-image: url("../img/icon-house.svg");
@@ -112,8 +112,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-left: 20px;
   width: 32px;
   height: 38px;
   background-image: url("../img/icon-gift.svg");
@@ -140,7 +139,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: 15px;
   width: 41px;
   height: 38px;
