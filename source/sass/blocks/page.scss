@@ -6,7 +6,7 @@
   position: relative;
   width: 320px;
   box-sizing: border-box;
-  padding: 40px 20px 20px;
+  padding: 37px 20px 17px;
   margin: 0;
   text-align: center;
 
@@ -23,7 +23,7 @@
 
 .page--main .page__intro {
   @include text-label;
-   padding: 40px 20px 40px;
+  padding: 40px 20px 40px;
 
   &::after {
     content: "";
@@ -34,7 +34,7 @@
     z-index: 100;
     border-style: solid;
     border-width: 18px 160px 0 160px;
-    border-color:  #fff #81b3d2 #81b3d2 #81b3d2;
+    border-color: #ffffff #81b3d2 #81b3d2 #81b3d2;
   }
 }
 
@@ -62,5 +62,5 @@
 
 .page__subheading {
   margin: 0;
-  padding-bottom: 5px;
+  padding: 3px 0 0 0;
 }

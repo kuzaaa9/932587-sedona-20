@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 60px;
+    padding: 25px 60px 0;
     border-top: 0 none;
   }
 
@@ -21,9 +21,8 @@
   display: block;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 0 3px;
   border: 0;
-  padding-bottom: 30px;
   position: relative;
 
   &::after {
@@ -79,7 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1) {
-    padding-left: 30px;
+    padding-left: 55px;
   }
 }
 
@@ -107,10 +106,13 @@
   .feedback-form__item:nth-child(3) .feedback-form__heading {
     padding: 20px 0;
     text-align: start;
+    margin: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    padding-left: 75px;
+@media (min-width: $desktop-width) {
+  .feedback-form__item:nth-child(3) .feedback-form__heading {
+    padding-left: 80px;
   }
 }
 
@@ -151,7 +153,7 @@
 }
 
 .feedback-form__button-wrapp {
-  margin: 20px 0 50px;
+  margin: 45px 0 40px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
