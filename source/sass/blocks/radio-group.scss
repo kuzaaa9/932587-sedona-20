@@ -2,9 +2,9 @@
   @include list-reset;
 
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0;
+    padding: 35px 0;
   }
 }

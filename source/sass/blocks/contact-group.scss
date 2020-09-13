@@ -3,9 +3,11 @@
   padding: 0;
 
   @include list-reset;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,12 +42,12 @@
 .contact-group__label {
   position: relative;
   display: block;
-  padding: 0 20px 10px;
+  padding: 0 20px 5px;
 
   @include text-label;
 
   @media (min-width: $tablet-width) {
-    padding-left: 20px;
+    padding: 0 20px 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +78,7 @@
 
 .contact-group__input {
   width: 207px;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 20px;
   background: $color-secondary;
   border: none;
   outline: none;
