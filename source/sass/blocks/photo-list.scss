@@ -81,7 +81,7 @@
 
 .photo-list__heading {
   margin: 0;
-  padding-bottom: 5px;
+
 
   @include text-content;
   color: $text-heading-color;
@@ -89,12 +89,13 @@
 
   @media (min-width: $desktop-width) {
     color: $text-secondary-color;
+    padding-bottom: 10px;
   }
 }
 
 .photo-list__author {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 
   @include text-content;
   text-transform: none;

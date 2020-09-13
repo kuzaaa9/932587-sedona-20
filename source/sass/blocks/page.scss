@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     width: 520px;
     margin: 0 auto;
-    padding: 30px 10px 35px;
+    padding: 50px 10px 40px;
 
     &::after {
       display: none;
@@ -21,25 +21,20 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page__intro {
-    padding: 55px 10px 30px;
-  }
-}
-
-.page--main > .page__intro {
+.page--main .page__intro {
   @include text-label;
+   padding: 40px 20px 40px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -19px;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 100;
     border-style: solid;
-    border-width: 19px 160px 0 160px;
-    border-color: #ffffff transparent transparent transparent;
+    border-width: 18px 160px 0 160px;
+    border-color:  #fff #81b3d2 #81b3d2 #81b3d2;
   }
 }
 
