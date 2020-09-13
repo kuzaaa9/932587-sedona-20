@@ -2,15 +2,14 @@
   position: relative;
   height: 389px;
   box-sizing: border-box;
-  background: #99c5df url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #99c5df;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: #99c5df url("../img/bg-back-mobile@2x.jpg");
-    background-position: center;
-    background-size: cover;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 
   &::after {
@@ -29,10 +28,10 @@
 @media (min-width: $tablet-width) {
   .promo {
     height: 518px;
-    background: url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
 
     &::after {
@@ -45,11 +44,10 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    background: url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg");
-      background-size: cover;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 
     &::after {
