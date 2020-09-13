@@ -78,7 +78,10 @@
   background-color: $color-secondary-active;
 }
 
-.checkbox-field__input:active + .checkbox-field__label::after,
+.checkbox-field__input:focus + .checkbox-field__label::before {
+  outline: 2px solid #a4a4a4;
+}
+
 .checkbox-field__input:checked + .checkbox-field__label::after {
   content: "";
   border-bottom: 4px solid $text-primary-color;

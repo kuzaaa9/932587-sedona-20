@@ -1,5 +1,4 @@
 .popup-failure {
-  position: fixed;
   z-index: 9999;
   top: 60%;
   left: 0;
@@ -13,23 +12,9 @@
   }
 }
 
-.popup-failure--closed {
-  display: none;
-}
-
-.popup-failure--opened .popup-failure {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
   .popup-failure__heading {
     padding: 0 45px 20px 45px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .popup__button-wrap {
-    padding: 45px 90px;
   }
 }
 

@@ -113,3 +113,35 @@
     }
   }
 }
+
+.main-nav--closed {
+  .site-list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.main-nav--opened,
+.main-nav--nojs {
+  .site-list {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.main-nav--nojs {
+  .site-list__link {
+    @include text-nav-menu;
+
+    @media (min-width: $tablet-width) {
+      @include text-label;
+      color: #000000;
+    }
+  }
+}

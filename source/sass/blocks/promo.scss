@@ -73,7 +73,7 @@
   }
 }
 
-.promo--extended {
+.promo--short {
   height: 158px;
 
   @media (min-width: $tablet-width) {
@@ -87,7 +87,7 @@
   }
 }
 
-.promo--extended .promo__img {
+.promo--short .promo__img {
   padding-top: 55px;
   width: 230px;
   height: 40px;
