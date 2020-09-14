@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 36px 0 0 0;
 }
 
 .copyright__text {
@@ -15,8 +15,6 @@
 
 .copyright__link {
   display: block;
-  width: 28px;
-  height: 34px;
   color: $text-heading-color;
 
   &:hover {
