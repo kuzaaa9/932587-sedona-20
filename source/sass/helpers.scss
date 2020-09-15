@@ -1,0 +1,29 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.hidden-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.visible-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.visible-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}

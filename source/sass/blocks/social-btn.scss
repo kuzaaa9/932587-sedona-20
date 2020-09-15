@@ -5,14 +5,18 @@
 
   @include list-reset;
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social-btn__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 48px;
   background: $color-main;
   color: $text-secondary-color;
 }

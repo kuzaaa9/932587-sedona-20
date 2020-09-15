@@ -19,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    padding-top: 48px;
   }
 }
 
@@ -101,10 +102,10 @@
 }
 
 .panel__button--subtitles {
-  margin-left: 70px;
+  margin-left: 115px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 430px;
+    margin-left: 445px;
   }
 
   @media (min-width: $desktop-width) {

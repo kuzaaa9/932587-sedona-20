@@ -7,4 +7,8 @@
   @media (min-width: $tablet-width) {
     padding: 35px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }

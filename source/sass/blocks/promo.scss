@@ -18,7 +18,7 @@
     bottom: 0;
     left: 0;
     width: 321px;
-    height: 25px;
+    height: 26px;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,15 +75,17 @@
 
 .promo--short {
   height: 158px;
+  background-size: auto;
+  background-position: bottom;
 
   @media (min-width: $tablet-width) {
+    background-size: cover;
     height: 290px;
-    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     height: 300px;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
 }
 
@@ -93,8 +95,12 @@
   height: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding-top: 93px;
     width: 458px;
     height: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 102px;
   }
 }

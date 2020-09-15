@@ -6,14 +6,14 @@
   position: relative;
   width: 320px;
   box-sizing: border-box;
-  padding: 37px 20px 17px;
+  padding: 32px 20px 32px;
   margin: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 520px;
+    width: 530px;
     margin: 0 auto;
-    padding: 50px 10px 40px;
+    padding: 65px 10px 45px;
 
     &::after {
       display: none;
@@ -23,7 +23,7 @@
 
 .page--main .page__intro {
   @include text-label;
-  padding: 31px 20px 51px;
+  padding: 33px 20px 51px;
 
   &::after {
     content: "";
@@ -35,6 +35,26 @@
     border-style: solid;
     border-width: 18px 160px 0 160px;
     border-color: #ffffff #81b3d2 #81b3d2 #81b3d2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 20px 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 20px 42px;
+  }
+}
+
+.page--form .page__intro {
+  padding: 35px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 47px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 47px 39px;
   }
 }
 
@@ -50,6 +70,10 @@
     font-size: 30px;
     line-height: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 33px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -63,4 +87,8 @@
 .page__subheading {
   margin: 0;
   padding: 3px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

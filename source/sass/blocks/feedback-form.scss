@@ -61,13 +61,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .feedback-form__item:nth-child(1),
-  .feedback-form__item:nth-child(3) {
-    border-top: 0 none;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(3) {
     order: -3;
@@ -78,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form__item:nth-child(1) {
-    padding-left: 55px;
+    padding-left: 58px;
   }
 }
 
@@ -88,8 +81,27 @@
   }
 }
 
+.feedback-form__item:nth-child(4) .feedback-form__heading {
+  padding-top: 15px;
+}
+
+.feedback-form__item:nth-child(5) .feedback-form__heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+    padding-bottom: 3px;
+  }
+}
+
 .feedback-form__heading {
-  padding: 20px;
+  padding: 21px 20px 18px;
 
   @include text-heading;
   color: $text-heading-color;
@@ -116,6 +128,17 @@
   }
 }
 
+.feedback-form__item:nth-child(2) .feedback-form__heading {
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .feedback-form__item--noborder {
   &::after {
     display: none;
@@ -126,7 +149,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 8px 19px;
 
   &::-webkit-input-placeholder {
     color: #000000;
@@ -144,7 +167,13 @@
   background: $color-secondary;
 
   @media (min-width: $tablet-width) {
-    margin: 35px 0 0;
+    margin: 58px 0 0;
+    padding: 16px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 52px 0 0;
+    padding: 16px 19px;
   }
 
   &:focus {
@@ -153,14 +182,18 @@
 }
 
 .feedback-form__button-wrapp {
-  margin: 45px 0 40px;
+  margin: 56px 0 36px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 58px 0;
+    margin: 52px 0 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 53px 0 62px;
   }
 }
 
@@ -186,5 +219,6 @@
     display: block;
 
     @include text-label;
+    margin-top: 20px;
   }
 }
